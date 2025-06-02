@@ -1,52 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evora's Shop</title>
     <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #fdf6f9;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #d4a5c2;
-            color: white;
-            padding: 30px 0;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-            color: #444;
-        }
-        main {
-            padding: 40px 20px;
-        }
-        footer {
-            background-color: #f4d9ec;
-            padding: 20px;
-            font-size: 0.9em;
-        }
+      body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #333;
+      }
+
+      header {
+        background-color: #b89cb3;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #e8dce4;
+        padding: 0.5rem;
+        gap: 1rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #b89cb3;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: #f9f4f9;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #e8dce4;
+        color: #444;
+        margin-top: 2rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Evora's Shop</h1>
-        <p>Votre satisfaction, notre priorité</p>
+      <h1>Evora's Shop</h1>
+      <p>Robes chics et élégantes • Sacs stylés et class</p>
     </header>
-    <main>
-        <h2>Bienvenue !</h2>
-        <p>Explorez nos collections de vêtements et accessoires féminins luxueux.</p>
-    </main>
+
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Catalogue</a>
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Bienvenue sur Evora's Shop</h1>
+      <p>Découvrez notre collection unique de robes et sacs tendances</p>
+    </section>
+
+    <section class="products">
+      <div class="product-card">
+        <img src="robe1.jpg" alt="Robe 1" />
+        <h3>Robe Élégante</h3>
+        <p>Parfaite pour vos soirées chic</p>
+      </div>
+      <div class="product-card">
+        <img src="sac1.jpg" alt="Sac 1" />
+        <h3>Sac Stylé</h3>
+        <p>Un style raffiné au quotidien</p>
+      </div>
+      <!-- Tu peux ajouter plus de produits ici -->
+    </section>
+
     <footer>
-        &copy; 2025 Evora's Shop - Tous droits réservés
+      <p>&copy; 2025 Evora's Shop - Tous droits réservés</p>
     </footer>
-</body>
+  </body>
 </html>
